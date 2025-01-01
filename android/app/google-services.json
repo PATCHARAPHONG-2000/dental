@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "746041165202",
+    "firebase_url": "https://dentalnews-657c1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dentalnews-657c1",
+    "storage_bucket": "dentalnews-657c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746041165202:android:8e5241008b8a48b87e6d4b",
+        "android_client_info": {
+          "package_name": "org.palmppd.ssru.dentalnews.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746041165202-8a6uor8o0b5pb5qi653upijo1mddq06g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzj617iVSZl_Fuc_bHwccmcpAB1WZkU3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746041165202-8a6uor8o0b5pb5qi653upijo1mddq06g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746041165202:android:294c10c42f6e702b7e6d4b",
+        "android_client_info": {
+          "package_name": "org.palmppd.ssru_dentalnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746041165202-8a6uor8o0b5pb5qi653upijo1mddq06g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzj617iVSZl_Fuc_bHwccmcpAB1WZkU3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746041165202-8a6uor8o0b5pb5qi653upijo1mddq06g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
