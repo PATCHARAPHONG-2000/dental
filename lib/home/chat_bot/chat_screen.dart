@@ -137,7 +137,8 @@ class _ChatScreenState extends State<ChatScreen> {
                       itemBuilder: (context, index) {
                         final message = _messages[index];
                         return MessageWidget(
-                          isFromUser: index % 2 == 0, // Assuming even indices are user messages
+                          isFromUser: index % 2 ==
+                              0, // Assuming even indices are user messages
                           message: message,
                         );
                       },
@@ -201,8 +202,8 @@ class _ChatScreenState extends State<ChatScreen> {
                       const SizedBox(height: 8),
                       _QuickMessageButton(
                         message: "การทำฟันสำคัญอย่างไร",
-                        onPressed: () => _handleMessageSubmission(
-                            "การทำฟันสำคัญอย่างไร"),
+                        onPressed: () =>
+                            _handleMessageSubmission("การทำฟันสำคัญอย่างไร"),
                       ),
                       const SizedBox(height: 8),
                       _QuickMessageButton(
@@ -252,22 +253,31 @@ class _QuickMessageButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 200,
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end, // จัดให้ปุ่มอยู่ด้านขวา
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          width: MediaQuery.of(context).size.width * 0.5,
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            onPressed: onPressed,
+            child: Text(
+              message,
+              style: GoogleFonts.k2d(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center, // จัดข้อความตรงกลางภายในปุ่ม
+            ),
           ),
         ),
-        onPressed: onPressed,
-        child: Text(
-          message,
-          style: GoogleFonts.k2d(fontSize: 14),
-          textAlign: TextAlign.center,
-        ),
-      ),
+      ],
     );
   }
 }

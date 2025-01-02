@@ -51,22 +51,29 @@ class _KnowledgeLinkScreenState extends State<KnowledgeLinkScreen> {
           child: Stack(
             children: [
               Container(
+                width: double.infinity,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Theme.of(context).scaffoldBackgroundColor,
+                  color: Theme.of(context).cardColor,
                   borderRadius: BorderRadius.circular(20),
-                  border:
-                      Border.all(width: 2, color: Theme.of(context).hoverColor),
+                  border: Border.all(
+                    width: 1.2,
+                    color: Theme.of(context).hoverColor,
+                  ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 15, left: 15),
-                child: Text(
-                  knowlink.name,
-                  style: const TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.w500,
-                    overflow: TextOverflow.ellipsis,
+                padding: const EdgeInsets.all(8.0),
+                child: Align(
+                  alignment: Alignment.centerLeft, // จัดข้อความให้อยู่ชิดซ้าย
+                  child: Text(
+                    knowlink.name,
+                    style: const TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w500,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    maxLines: 1, // จำกัดให้ข้อความแสดงแค่บรรทัดเดียว
                   ),
                 ),
               ),
@@ -82,7 +89,7 @@ class _KnowledgeLinkScreenState extends State<KnowledgeLinkScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Theme.of(context).dividerColor,
         centerTitle: true,
         elevation: 0,
         automaticallyImplyLeading: false,
