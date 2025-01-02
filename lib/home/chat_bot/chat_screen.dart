@@ -258,7 +258,7 @@ class _QuickMessageButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(20),
           ),
         ),
         onPressed: onPressed,

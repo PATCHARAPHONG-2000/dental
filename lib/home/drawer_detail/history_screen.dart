@@ -13,7 +13,7 @@ class HistoryScreen extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
-    List<Paymentse> historye = getPaymentseList();
+    List<Historye> historye = getHistoryeList();
 
     return Scaffold(
       appBar: AppBar(

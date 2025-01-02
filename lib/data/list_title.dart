@@ -164,7 +164,8 @@ class Historye {
   });
 }
 
-List<Historye> historye = [
+List<Historye> getHistoryeList(){ return [
+  
   Historye(
     name: tr('His.HisN1'),
     lebbel: tr('His.HisN1_L1'),
@@ -219,6 +220,7 @@ List<Historye> historye = [
         tr('His.HisN5_L11'),
   ),
 ];
+}
 
 class PolicyDentalCouncil {
   final String name;
